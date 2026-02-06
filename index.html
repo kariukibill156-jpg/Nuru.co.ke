@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuru Dera Collection</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#fff;color:#333;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{width:100%;display:block}
+
+nav{
+  position:sticky;top:0;z-index:1000;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1rem 2rem;background:#f8f8f8;
+  box-shadow:0 2px 5px rgba(0,0,0,.1)
+}
+.logo{font-size:1.5rem;font-weight:600;color:#d4af37}
+nav ul{display:flex;gap:1.5rem;list-style:none}
+nav a:hover{color:#b5932b}
+
+.hero{
+  min-height:100vh;
+  display:flex;flex-direction:column;
+  justify-content:center;align-items:center;
+  text-align:center;
+  background:#fdf6f0;padding:2rem
+}
+.hero h1{font-size:3rem;color:#d4af37}
+.hero p{margin:1rem 0 2rem;font-size:1.2rem}
+.hero a{
+  background:#d4af37;color:#fff;
+  padding:.8rem 2rem;border-radius:5px;
+  font-weight:600
+}
+
+.products{padding:4rem 2rem;text-align:center}
+.products h2{color:#d4af37;margin-bottom:2rem}
+
+.carousel{
+  display:flex;gap:1.5rem;
+  overflow-x:auto;scroll-snap-type:x mandatory;
+  padding-bottom:1rem
+}
+.carousel::-webkit-scrollbar{display:none}
+
+.product{
+  min-width:260px;
+  border:1px solid #eee;
+  border-radius:10px;
+  overflow:hidden;
+  scroll-snap-align:start;
+  transition:.3s
+}
+.product:hover{transform:scale(1.03);box-shadow:0 10px 20px rgba(0,0,0,.15)}
+.product img{height:360px;object-fit:cover}
+
+.info{padding:1rem}
+.info h3{color:#d4af37}
+.price{font-weight:600;margin:.3rem 0}
+
+.order-btn{
+  display:inline-block;
+  margin-top:.5rem;
+  background:#25D366;
+  color:#fff;
+  padding:.5rem 1.2rem;
+  border-radius:5px;
+  font-weight:600
+}
+.order-btn:hover{background:#128c4a}
+
+.about, .contact{
+  padding:4rem 2rem;text-align:center
+}
+.about{background:#f8f8f8}
+.about h2, .contact h2{color:#d4af37;margin-bottom:1rem}
+.about p{max-width:700px;margin:auto}
+
+.contact a{
+  background:#25D366;color:#fff;
+  padding:.8rem 1.5rem;border-radius:5px;
+  font-weight:600;display:inline-block
+}
+
+footer{
+  text-align:center;padding:2rem;
+  background:#f8f8f8;color:#555
+}
+
+.whatsapp-float{
+  position:fixed;bottom:20px;right:20px;
+  background:#25D366;color:#fff;
+  padding:1rem;border-radius:50%;
+  font-size:1.4rem;
+  box-shadow:0 5px 15px rgba(0,0,0,.2)
+}
+
+@media(max-width:768px){
+  .hero h1{font-size:2.2rem}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Nuru Dera</div>
+  <ul>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <h1>Nuru Dera Collection</h1>
+  <p>Simplicity meets style 🌿 Elegant & affordable deras</p>
+  <a href="#products">Shop Now</a>
+</section>
+
+<section class="products" id="products">
+<h2>Our Deras</h2>
+
+<div class="carousel">
+
+<!-- PRODUCT 1 -->
+<div class="product">
+<img src="images/dera1.jpg" alt="Dera Classic">
+<div class="info">
+<h3>Dera Classic</h3>
+<p class="price">Ksh 1,500</p>
+<a class="order-btn" target="_blank"
+href="https://api.whatsapp.com/send?phone=254794706977&text=Hi%20I%20want%20to%20order%20Dera%20Classic%20(Ksh%201,500)%20from%20Nuru%20Dera%20Collection">
+Order via WhatsApp
+</a>
+</div>
+</div>
+
+<!-- PRODUCT 2 -->
+<div class="product">
+<img src="images/dera2.jpg" alt="Dera Classic">
+<div class="info">
+<h3>Dera Floral</h3>
+<p class="price">Ksh 1,800</p>
+<a class="order-btn" target="_blank"
+href="https://api.whatsapp.com/send?phone=254794706977&text=Hi%20I%20want%20to%20order%20Dera%20Floral%20(Ksh%201,800)%20from%20Nuru%20Dera%20Collection">
+Order via WhatsApp
+</a>
+</div>
+</div>
+
+<!-- PRODUCT 3 -->
+<div class="product">
+<img src="images/dera3.jpg" alt="Dera Classic">
+<div class="info">
+<h3>Dera Luxury</h3>
+<p class="price">Ksh 2,000</p>
+<a class="order-btn" target="_blank"
+href="https://api.whatsapp.com/send?phone=254794706977&text=Hi%20I%20want%20to%20order%20Dera%20Luxury%20(Ksh%202,000)%20from%20Nuru%20Dera%20Collection">
+Order via WhatsApp
+</a>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="product">
+<img src="images/dera4.jpg" alt="Dera Classic">
+<div class="info">
+<h3>Dera Silk</h3>
+<p class="price">Ksh 2,200</p>
+<a class="order-btn" target="_blank"
+href="https://api.whatsapp.com/send?phone=254794706977&text=Hi%20I%20want%20to%20order%20Dera%20Silk%20(Ksh%202,200)%20from%20Nuru%20Dera%20Collection">
+Order via WhatsApp
+</a>
+</div>
+</div>
+
+<!-- PRODUCT 5 -->
+<div class="product">
+<img src="images/dera5.jpg" alt="Dera Classic">
+<div class="info">
+<h3>Dera Casual</h3>
+<p class="price">Ksh 1,400</p>
+<a class="order-btn" target="_blank"
+href="https://api.whatsapp.com/send?phone=254794706977&text=Hi%20I%20want%20to%20order%20Dera%20Casual%20(Ksh%201,400)%20from%20Nuru%20Dera%20Collection">
+Order via WhatsApp
+</a>
+</div>
+</div>
+
+<!-- PRODUCT 6 -->
+<div class="product">
+<img src="images/dera6.jpg" alt="Dera Classic">
+<div class="info">
+<h3>Dera Premium</h3>
+<p class="price">Ksh 2,500</p>
+<a class="order-btn" target="_blank"
+href="https://api.whatsapp.com/send?phone=254794706977&text=Hi%20I%20want%20to%20order%20Dera%20Premium%20(Ksh%202,500)%20from%20Nuru%20Dera%20Collection">
+Order via WhatsApp
+</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="about" id="about">
+<h2>About Us</h2>
+<p>
+Nuru Dera Collection brings you elegant, affordable and comfortable deras for every occasion.  
+Quality, beauty and customer happiness are our priority.
+</p>
+</section>
+
+<section class="contact" id="contact">
+<h2>Contact Us</h2>
+<a target="_blank"
+href="https://api.whatsapp.com/send?phone=254794706977&text=Hi%20I%20want%20to%20place%20an%20order%20from%20Nuru%20Dera%20Collection">
+Chat on WhatsApp
+</a>
+</section>
+
+<footer>
+&copy; 2026 Nuru Dera Collection • All Rights Reserved
+</footer>
+
+<a class="whatsapp-float" target="_blank"
+href="https://api.whatsapp.com/send?phone=254794706977&text=Hi%20I%20want%20to%20place%20an%20order%20from%20Nuru%20Dera%20Collection">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
